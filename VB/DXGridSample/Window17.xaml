@@ -1,0 +1,36 @@
+﻿<Window x:Class="DevExpressGrid_Flashing.Window17"
+        xmlns:dxgt="http://schemas.devexpress.com/winfx/2008/xaml/grid/themekeys" 
+            xmlns:dxgcore="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+        xmlns:dxght="clr-namespace:DevExpress.Xpf.Grid.HitTest;assembly=DevExpress.Xpf.Grid.v17.2"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" 
+        xmlns:local="clr-namespace:DevExpressGrid_Flashing"
+        	xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        Title="Window17" Height="373" Width="305.849">
+    <Window.Resources>
+        <Style x:Key="customContentStyle" TargetType="{x:Type ContentPresenter}">
+            <Setter Property="TextElement.Foreground" Value="Red" />
+            <Setter Property="TextElement.FontWeight" Value="Bold" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+
+        <dxg:GridControl DataSource="{x:Static local:MyData.Data}" AutoPopulateColumns="true" Name="grid" Margin="0,0,0,0" AutoExpandAllGroups="True">
+
+            <dxg:GridControl.Columns>
+                <dxg:GridColumn FieldName="Number1" TabStop="False" FilterPopupMode="List" Header="Value" >
+
+                </dxg:GridColumn>
+                <dxg:GridColumn FieldName="MyBool" Header="Prevent Edit">
+                </dxg:GridColumn>
+            </dxg:GridControl.Columns>
+            <dxg:GridControl.View>
+                <dxg:TableView Name="view" ShowFilterPanelMode="Default" ShowTotalSummary="False" ShowingEditor="view_ShowingEditor">
+                </dxg:TableView>
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+    </Grid>
+</Window>
