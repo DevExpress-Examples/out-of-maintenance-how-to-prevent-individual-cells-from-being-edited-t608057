@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Window17.xaml](./CS/DXGridSample/Window17.xaml) (VB: [Window17.xaml](./VB/DXGridSample/Window17.xaml))
+* [Window17.xaml.cs](./CS/DXGridSample/Window17.xaml.cs) (VB: [Window17.xaml](./VB/DXGridSample/Window17.xaml))
+<!-- default file list end -->
 # How to: Prevent Individual Cells From Being Edited
 
 
